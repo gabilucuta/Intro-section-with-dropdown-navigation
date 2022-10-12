@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+ 
+</head>
+<body>
+  <header>
+    
+    
+    <div class="container-flex">
+      <div class="mobile">
+    <img class="logo2" src="images/logo.svg" alt="logo">
+    <div id="hamburger" class="buttonHam"><img src="images/icon-menu.svg" alt="hamurg"></div>
+       </div>
+
+      <div id="navi" class="navigation">
+        
+        <div class="left">
+    <img class="logo" src="images/logo.svg" alt="logo">
+    <div class="button3"><img id="closer"src="images/icon-close-menu.svg" alt=""></div>
+     
+          <div id="features"> <a  class="features nav">Features <i><img id="arrow" class="arrow" src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+           </i></a>
+           <div id="dropdown-features" class="dropdown-features dropdown">
+            <div class="todo navd"><img src="images/icon-todo.svg" alt="todo">Todo List</div>
+            <div class="Calendar navd" ><img src="images/icon-calendar.svg" alt="todo">Calendar</div>
+            <div class="Remdinders navd"><img src="images/icon-reminders.svg" alt="todo">Remdinders</div>
+            <div class="Planning navd"><img src="images/icon-planning.svg" alt="todo">Planning</div>   
+          </div></div>
+           <div id="company"><a class="company nav">Company <i><img id="arrow2" class="arrow2" src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+           </i></a>
+           <div id="dropdown-company" class="dropdown-Company dropdown">
+            <div class="navd" >History</div>
+            <div class="navd">Our Team</div>
+            <div class="navd">Blog</div>    
+           </div></div>
+           <a class="nav" href="#">Careers</a>
+           <a class="nav" href="#">About</a>
+          </div>
+          <div class="right">
+            <a href="#" class="nav log">Login</a>
+            <a href="#" class="nav register">Register</a>
+          </div>
+          </div>
+      </div>
+
+      
+      </div>
+      
+    
+
+  </header>
+</header>
+  
+  <main>
+
+    <div class="leftSide">
+      <img class="mobileImage" src="images/image-hero-mobile.png" alt="image-hero-mobile">
+     <h1 class="heading">Make <div> remote work</div></h1>
+  
+    <p class="par">Get your team in sync, no matter your location. Streamline processes, 
+    create team rituals, and watch productivity soar. </p>
+  
+    <a class="button" href="#">Learn More</a>
+
+    <div class="sponsors">
+      <img src="images/client-audiophile.svg" alt="client-audiophile">
+      <img src="images/client-databiz.svg" alt="client-databiz">
+      <img src="images/client-maker.svg" alt="client-maker">
+      <img src="images/client-meet.svg" alt="client-meet">      
+    </div>
+    </div>
+
+    <div class="rightSide"><img src="images/image-hero-desktop.png" alt="image-hero-desktop"></div>
+    
+  </main>
+
+  <script src="script.js"></script>
+
+  
+  
+</body>
+</html>

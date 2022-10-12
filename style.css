@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Epilogue:wght@500;700&display=swap');
+/* 
+Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%) */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue' ,sans-serif;
+    transition: all 1s;
+}
+html
+{
+    min-width: 380px;
+}
+
+
+
+/* HEADER STYLE */
+
+.navigation
+{
+    padding: 1.8em;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+
+
+.button2
+{
+    display: none;
+}
+
+.menu-collapse
+{
+    display: flex;
+}
+
+
+
+.logo
+{
+    display: flex;
+}
+
+
+.left
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+header a
+{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0px 30px;
+}
+
+header
+{
+    min-width: 380px;
+}
+
+.logo
+{
+    margin-right: 30px;
+}
+
+a:hover
+{
+    color: black;
+}
+
+.register
+{
+    padding: 13px 20px;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.register:hover
+{
+    border-color: black;
+    color: black;
+}
+
+
+
+.nava
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MAIN STYLE */
+
+main
+{
+    height: 590px;
+    width: auto;
+    margin: 2% 10%;
+    display: flex;
+}
+
+.leftSide
+{
+    width: 60%;
+}
+
+.rightSide
+{
+    width: 40%;
+}
+
+.rightSide img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.leftSide
+{
+    padding: 8% 0%;
+}
+
+.heading
+{
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+.par
+{
+    color: hsl(0, 0%, 41%);
+    padding-right: 45%;
+    word-spacing: 3px;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 70px;
+}
+
+.button
+{
+    text-decoration: none;
+    background-color: black;
+    padding: 17px 25px;
+    color: white;
+    border-radius: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.button:hover
+{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    
+}
+
+.sponsors
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.sponsors img
+{
+    margin-right:50px;
+}
+
+#hamburger
+{
+    display: none;
+}
+
+
+/* DROPDOWN STYLE */
+
+.dropdowns
+{
+    display: flex;
+}
+
+.navd
+{
+    color: hsl(0, 0%, 41%);
+    margin: 20px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.navd img
+{
+    margin-right: 15px;
+}
+
+.dropdown
+{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(116, 116, 116, 0.478);
+    border-radius: 10px;
+    padding: 0px 5px;
+    display: none;
+}
+
+.dropdown-features.opacity
+{
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.dropdown-company.opacity
+{
+    opacity: 0;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#dropdown-features
+{
+    opacity: 0;
+    left: 120px;
+    top: 60px;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+
+
+.dropdown-Company
+{
+    opacity: 0;
+    left: 300px;
+    top: 60px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fade
+{
+    transition: 1s;
+    opacity: 0;
+}
+
+
+
+.arrow.rotate
+{
+    transition: 1s;
+    transform: rotate(180deg);
+}
+
+.arrow2.rotate
+{
+    transition: 1s;
+    transform: rotate(180deg);
+}
+
+.arrow2.rotate-back
+{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+.arrow.rotate-back
+{
+    transition: 1s;
+    transform: rotate(0deg);
+}
+
+/* MOBILE DESIGN !! */
+
+.mobileImage
+{
+    display: none;
+    height: 200px;
+    width: 100%;
+      
+}
+
+.logo2
+{
+    display: none;
+}
+
+
+
+.button3
+{
+    display: none;
+}
+
+
+
+
+@media (max-width:500px){
+  
+    main
+    {
+        width:300px;
+        min-width: 380px;
+        display : flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px 10px 0px 10px;
+    }
+    .dropdown
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    body
+    {
+        min-width: 380px;
+    }
+
+    .mobile
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        min-width: 380px;
+        width: 300px;
+    }
+
+    #hamburger
+    {
+        cursor: pointer;
+        display: block;
+
+    }
+
+  
+    .left
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #closer
+    {
+        cursor: pointer;
+        margin-left: 80px;
+    }
+  
+
+    .navigation
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;  
+        top: 0;
+        right: 0;
+        background-color: white;
+        height: 200vh;
+        padding: 10px;
+        width: 200px;
+        display: none;
+        transition: all 0.8s ease-in-out;
+        box-shadow: -100px -100px 250px rgba(28, 27, 27, 0.656);
+    }
+
+    .container-flex
+    {
+        min-width: 380px;
+    }
+
+    #navi.slide
+    {
+        display: none;
+    }
+
+
+    .logo
+    {
+        display: none;
+    }
+
+    .heading
+     {
+        min-width: 320px;
+     }
+
+     .par
+     {
+        min-width: 320px;
+     }
+
+     #dropdown-features
+     {
+        position: inherit;
+        top: 0;
+        right: 100px;
+        padding: 0;
+     }
+
+     #dropdown-company
+    {
+        position: inherit;
+        opacity: 0;
+    }
+     
+
+  
+
+
+    
+
+    .right
+    {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .log
+    {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+    .button3
+    {
+        display: block;
+        padding: 10px;
+        text-align: right !important;
+
+    }
+
+    .button3 img
+    {
+        text-align: right !important;
+
+    }
+
+    .dropdown-features
+    {
+        background-color: none;
+        box-shadow: none;
+    }
+
+    .dropdown
+    {
+        opacity: 1;
+    }
+    .dropdown-Company
+    {
+        position: inherit;
+        background-color: none;
+        box-shadow: none;
+    }
+
+
+    
+
+    .nav
+    {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .leftSide
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+    
+
+    .mobileImage
+    {
+        display: block;
+    }
+
+    .features
+    {
+        display: flex;
+    }
+
+    .company
+    {
+        display: flex;
+    }
+
+    .leftSide
+    {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .leftSide p
+    {
+        padding: 0;
+    }
+
+    .leftSide h1
+    {
+        display: flex;
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .leftSide h1 div
+    {
+        margin-left: 10px;
+    }
+
+    .logo2
+    {
+        display: block;
+    }   
+
+  
+
+    
+
+  
+
+    .sponsors
+    {
+        margin-top: 0;
+       display: flex;
+    }  
+    
+    .par
+    {
+        max-width: 300px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .sponsors img
+    {
+        
+        margin: 80px 5px 80px 5px;
+        width: 70px;
+    }
+
+    .rightSide img
+    {
+        display: none;
+    }
+
+    .dropdown
+    {
+        display: none;
+    }
+
+    
+
+}
